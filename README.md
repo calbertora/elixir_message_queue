@@ -14,10 +14,14 @@ def deps do
   ]
 end
 ```
-To use it:
-In a iex type:
+To use it, go to the root and type:
 
 ```elixir
+iex -S mix
+Erlang/OTP 24 [erts-12.0.4] [source] [64-bit] [smp:4:4] [ds:4:4:10] [async-threads:1] [jit]
+
+Compiling 1 file (.ex)
+Interactive Elixir (1.13.1) - press Ctrl+C to exit (type h() ENTER for help)
 iex(1)> PubSubQueue.start_link([])
 {:ok, #PID<0.161.0>}
 iex(2)> Messenger.send_messages(30)
